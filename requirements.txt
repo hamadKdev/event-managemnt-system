@@ -1,11 +1,10 @@
 fastapi
-uvicorn
-supabase
+uvicorn[standard]
 python-dotenv
-PyJWT
-bcrypt
+supabase
+passlib
+bcrypt==4.0.1
+pyjwt
 email-validator
+python-multipart
 requests
-python-jose[cryptography]
-passlib[bcrypt]
-
