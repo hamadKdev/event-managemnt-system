@@ -1,11 +1,11 @@
 import os
 from datetime import datetime, timedelta, timezone
 
+import jwt
+from jwt import PyJWTError
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from jose import jwt, JWTError
 from passlib.context import CryptContext
-
 from database import supabase
 from models import UserOut, UserRole
 
