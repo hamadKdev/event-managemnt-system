@@ -1,0 +1,6 @@
+{
+  "name": "Event Registration & Management System",
+  "description": "A responsive event registration and management system connecting to a FastAPI backend with attendee registration and admin management workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
