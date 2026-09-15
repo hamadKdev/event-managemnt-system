@@ -37,9 +37,9 @@ def create_access_token(user_id: str, role: str) -> str:
 def decode_token(token: str) -> dict:
     try:
         return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    except JWTError:
+    except PyJWTError:
         raise HTTPException(status_code=401, detail="Invalid or expired token")
-
+    
 
 async def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
