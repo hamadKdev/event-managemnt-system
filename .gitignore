@@ -1,9 +1,10 @@
+node_modules/
+dist/
 .env
 .env.local
-venv/
-.venv/
-__pycache__/
+
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+backend/.env
 *.pyc
-*.pyo
-.vercel/
-node_modules/
